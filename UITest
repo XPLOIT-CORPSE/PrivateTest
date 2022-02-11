@@ -1,11 +1,10 @@
 local UI = {}
 
 function UI.Settings(Config)
-	local Title = Config.Title or "UiLibrary"
-  local Theme = (Config.Style and math.clamp(Config.Style, 1, 2)) or 1
+  local Title = Config.Title or "UiLibrary"
+  local Theme = (Config.Theme and math.clamp(Config.Theme, 1, 2)) or 1
   print(Title)
   print(Theme)
 end
   
 return UI
-
